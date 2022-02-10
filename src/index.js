@@ -6,8 +6,8 @@ import {Card,Card2} from './Card';
 
 ReactDOM.render(
     <div>
-    <Card/>
-    <Card2/>
+    <Card name="SVECW" location="BHVM AP"/>
+    <Card2 name="VIT" location="Bhimavaram AP"/>
     </div>,
     document.getElementById('root')
 );

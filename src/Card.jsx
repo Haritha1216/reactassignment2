@@ -1,16 +1,16 @@
 import Faker from 'faker';
 
-function Card(){
+function Card(props){
     return(
         <div className="ui cards">
   <div className="card">
     <div className="content">
       <img className="right floated mini ui image" src={Faker.image.image()}/>
       <div className="header">
-        Elliot Fu
+        {props.name}
       </div>
       <div className="meta">
-        Friends of Veronika
+       {props.location}
       </div>
       <div className="description">
         Elliot requested permission to view your contact details
@@ -26,7 +26,7 @@ function Card(){
   </div>
     )
 }
-function Card2(){
+function Card2(prop){
     return(
         <div className="ui cards">
 
@@ -34,10 +34,10 @@ function Card2(){
     <div className="content">
       <img className="right floated mini ui image" src={Faker.image.image()}/>
       <div className="header">
-        Jenny Hess
+        {prop.name}
       </div>
       <div className="meta">
-        New Member
+        {prop.location}
       </div>
       <div className="description">
         Jenny wants to add you to the group <b>best friends</b>
